@@ -1717,6 +1717,9 @@
         "placeholder": "Please enter Huawei Cloud WAF certificate ID",
         "tooltip": "For more information, see <a href=\"https://console-intl.huaweicloud.com/console/#/waf/certificateManagement\" target=\"_blank\">https://console-intl.huaweicloud.com/console/#/waf/certificateManagement</a>"
       },
+      "huaweiibmc_auto_restart": {
+        "label": "Auto restart iBMC after deployment"
+      },
       "jdcloud_alb_region_id": {
         "label": "JD Cloud region ID",
         "placeholder": "Please enter JD Cloud ALB region ID (e.g. cn-north-1)",
@@ -2019,12 +2022,22 @@
         "placeholder": "Please enter OCI compartment OCID",
         "tooltip": "For more information, see <a href=\"https://docs.oracle.com/en-us/iaas/Content/Identity/compartments/managingcompartments.htm\" target=\"_blank\">https://docs.oracle.com/en-us/iaas/Content/Identity/compartments/managingcompartments.htm</a>"
       },
+      "proxmoxbs": {
+        "guide": "Requires Proxmox Backup Server v2.1 or higher."
+      },
+      "proxmoxbs_node_name": {
+        "label": "Proxmox BS node name",
+        "placeholder": "Please enter Proxmox BS node name"
+      },
+      "proxmoxbs_auto_restart": {
+        "label": "Auto restart Proxmox BS after deployment"
+      },
       "proxmoxve": {
-        "guide": "Requires Proxmox VE v5.2 or higher."
+        "guide": "Requires Proxmox Virtual Environment v5.2 or higher."
       },
       "proxmoxve_node_name": {
-        "label": "Proxmox VE cluster node name",
-        "placeholder": "Please enter Proxmox VE cluster node name"
+        "label": "Proxmox VE node name",
+        "placeholder": "Please enter Proxmox VE node name"
       },
       "proxmoxve_auto_restart": {
         "label": "Auto restart Proxmox VE after deployment"
@@ -2803,6 +2816,11 @@
         "label": "VolcEngine CLB listener ID",
         "placeholder": "Please enter VolcEngine CLB listener ID",
         "tooltip": "For more information, see <a href=\"https://console.volcengine.com/clb/LoadBalancer\" target=\"_blank\">https://console.volcengine.com/clb/LoadBalancer</a>"
+      },
+      "volcengine_clb_snidomain": {
+        "label": "VolcEngine CLB SNI domain (Optional)",
+        "placeholder": "Please enter the VolcEngine CLB extension domain",
+        "help": "Notes: Leave it blank to set the default certificate; otherwise, set the extension one for SNI."
       },
       "volcengine_dcdn_domain": {
         "label": "VolcEngine DCDN domain",
