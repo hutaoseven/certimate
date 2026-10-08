@@ -87,8 +87,14 @@
       "label": "ACME EAB HMAC Key",
       "placeholder": "请输入 ACME EAB HMAC Key"
     },
+    "shared_acme_eab_pair": {
+      "errmsg": "请同时填写 ACME EAB KID 与 ACME EAB HMAC Key，或同时留空以使用自动方式。"
+    },
     "shared_allow_insecure_conns": {
       "label": "忽略 SSL/TLS 证书验证"
+    },
+    "shared_ca_access_optional": {
+      "help": "留空时，将使用上方填写的证书联系邮箱自动向 {{provider}} 获取 EAB 凭据（该邮箱会被发送给 {{provider}}）；也可以选择已有的授权，使用手动 EAB 凭据。"
     },
 
     "1panel_server_url": {
@@ -1427,6 +1433,14 @@
       "label": "SSH 密钥口令（可选）",
       "placeholder": "请输入 SSH 密钥口令"
     },
+    "ssh_key_certificate": {
+      "label": "SSH 密钥证书（可选）",
+      "placeholder": "请输入 SSH 密钥证书\r\n\r\nssh-ed25519-cert-v01@openssh.com AAAA...",
+      "tooltip": "由目标主机信任的用户 CA 签发的 OpenSSH 用户证书文件内容（如 id_ed25519-cert.pub）。设置后将优先于裸私钥进行认证。",
+      "errmsg": {
+        "invalid": "无效的 SSH 密钥证书"
+      }
+    },
     "ssh_jump_servers": {
       "label": "跳板机（可选）",
       "errmsg": {
@@ -1680,6 +1694,12 @@
     },
     "zerossl_eab": {
       "guide": "点击下方链接了解如何获取 ZeroSSL EAB：<br><a href=\"https://zerossl.com/documentation/acme/\" target=\"_blank\">https://zerossl.com/documentation/acme/</a>"
+    },
+    "zerossl_eab_auto": {
+      "guide": "两项均留空时，使用全局设置的工作流将以其证书联系邮箱自动向 ZeroSSL 获取 EAB 凭据，该邮箱会被发送给 ZeroSSL。也可以两项都填写，使用你手动获取的 EAB 凭据。"
+    },
+    "zerossl_eab_auto_access": {
+      "guide": "两项均留空时，选用此授权的工作流将以其证书联系邮箱自动向 ZeroSSL 获取 EAB 凭据，该邮箱会被发送给 ZeroSSL。也可以两项都填写，使用你手动获取的 EAB 凭据。"
     }
   }
 }
